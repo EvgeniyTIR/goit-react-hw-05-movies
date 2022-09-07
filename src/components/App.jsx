@@ -13,7 +13,7 @@ export const App = () => {
         color: '#010101',
       }}
     >
-      <Box></Box>
+      <Box>hellow world</Box>
       <GlobalStyle />
     </div>
   );
