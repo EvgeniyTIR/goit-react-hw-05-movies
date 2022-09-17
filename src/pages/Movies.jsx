@@ -1,11 +1,11 @@
-import { SearchBox } from './SerchBox/SerchBox';
+import { SearchBox } from '../components/SerchBox/SerchBox';
 
 import { Link, Outlet } from 'react-router-dom';
 
 export const Movies = () => {
   return (
     <main>
-      <h1>About Us</h1>
+      <h1>Search Movies</h1>
       <SearchBox />
       <ul>
         <li>
