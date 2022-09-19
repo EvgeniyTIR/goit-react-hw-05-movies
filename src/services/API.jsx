@@ -9,11 +9,11 @@ export const getTrendingMovies = async () => {
   return response.data;
 };
 
-export const fetchQuery = async (page, query) => {
-  const response = await axios.get(
-    `search/movie?api_key=${API_KEY}&query=${query}&page=${page}`
+export const fetchQuery = async query => {
+  const res = await axios(
+    `https://api.themoviedb.org/3/search/movie?api_key=${API_KEY}&language=en-US&query=${query}&page=1`
   );
-  return response.data;
+  return res;
 };
 
 export const getMovieDetails = async id => {
@@ -28,4 +28,11 @@ export const fetchReviews = async id => {
     `movie/${id}/reviews?api_key=${API_KEY}&language=en-US&page=1`
   );
   return response.data.results;
+};
+
+export const fetchCast = async id => {
+  const response = await axios.get(
+    `/movie/${id}/credits?api_key=${API_KEY}&language=en-US`
+  );
+  return response.data.cast;
 };

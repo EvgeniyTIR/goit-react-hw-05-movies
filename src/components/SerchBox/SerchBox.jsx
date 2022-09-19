@@ -5,7 +5,7 @@ export const SearchBox = ({ value, onChange }) => {
     <Wrapper>
       <Icon />
       <Input
-        type="text"
+        type="input"
         value={value}
         onChange={e => onChange(e.target.value)}
       />

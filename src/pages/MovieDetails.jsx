@@ -54,10 +54,14 @@ export const MovieDetails = () => {
         <p>Additional information</p>
         <ul>
           <li>
-            <Link to="cast" state={{ from: backLinkHref }}>Cast</Link>
+            <Link to="cast" state={{ from: backLinkHref }}>
+              Cast
+            </Link>
           </li>
           <li>
-            <Link to="reviews" state={{ from: backLinkHref }}>Reviews</Link>
+            <Link to="reviews" state={{ from: backLinkHref }}>
+              Reviews
+            </Link>
           </li>
         </ul>
         <hr />
