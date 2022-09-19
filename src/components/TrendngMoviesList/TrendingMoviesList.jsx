@@ -10,7 +10,7 @@ const StyledLink = styled(Link)`
   }
 `;
 
-export const TrendingMoviesList = ({ movies, state }) => {
+const TrendingMoviesList = ({ movies, state }) => {
   return (
     <ul>
       {movies.map(movie => {
@@ -32,3 +32,5 @@ TrendingMoviesList.propType = {
   id: PropTypes.number.isRequired,
   title: PropTypes.string.isRequired,
 };
+
+export default TrendingMoviesList;

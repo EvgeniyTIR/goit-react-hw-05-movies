@@ -1,7 +1,7 @@
 import { Outlet } from 'react-router-dom';
 import { Container, Header, Logo, Link } from './SharedNav.styled';
 
-export const SharedNav = () => {
+const SharedNav = () => {
   return (
     <Container>
       <Header>
@@ -19,3 +19,5 @@ export const SharedNav = () => {
     </Container>
   );
 };
+
+export default SharedNav;

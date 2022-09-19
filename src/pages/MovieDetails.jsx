@@ -4,7 +4,7 @@ import { BackLink } from '../components/BackLink/BackLink';
 import { Box } from 'components/Box';
 import * as API from '../services/API';
 
-export const MovieDetails = () => {
+const MovieDetails = () => {
   const [movieData, setMovieData] = useState({});
   const { movieId } = useParams();
   const location = useLocation();
@@ -70,3 +70,5 @@ export const MovieDetails = () => {
     </main>
   );
 };
+
+export default MovieDetails;
